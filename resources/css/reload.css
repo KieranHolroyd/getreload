@@ -163,7 +163,10 @@ a{
 }
 a:hover{
     all: initial;
+    color: #26D0CE;
+    text-decoration: none;
     border-bottom: #26D0CE 1px solid;
+    transition: border-bottom .4s ease;
 }
 .r-link-nounderline{
     text-decoration: none;
