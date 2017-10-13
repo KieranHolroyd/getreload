@@ -1,0 +1,20 @@
+{
+  "name": "getreload",
+  "homepage": "https://github.com/KieranHolroyd/getreload",
+  "authors": [
+    "Kieran Holroyd <kieran@nitrexdesign.co.uk>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "legitripple": "^1.1.0"
+  }
+}
