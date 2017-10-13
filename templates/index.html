@@ -1,28 +1,67 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/resources/css/reload.css">
+        <title>Reload | The Javascript &amp; CSS Library For Modern Applications</title>
+        <link rel="stylesheet" href="../resources/css/reload.css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     </head>
     <body>
-        <button class="r-btn r-btn-secondary">Test</button>
-        <button class="r-btn r-btn-secondary-sm">Test</button>
-        <div style="max-width: 300px;">
-            <div class="r-card">
-                <div class="r-card-head">
-                    <p class="r-card-title">Hello, World</p>
+        <ul>
+            <li><a href="#text">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#navbar">NavBar &amp; Navigation</a></li>
+        </ul>
+        <div class="r-container-l">
+            <p class="r-text-title" id="text">Text Options:</p>
+                <div class="r-indent-left">
+                    <p class="r-text-headline">r-text-headline</p>
+                    <p class="r-text-headline-sub">r-text-headline-sub</p>
+                    <p class="r-text-title">r-text-title</p>
+                    <p class="r-text-title-sub">r-text-title-sub</p>
                 </div>
-                <div class="r-card-body">
-                    <p class="r-card-text">Lorem Ipsum</p>
-                    <button class="r-btn r-btn-secondary-sm">Test</button>
-                    <button class="r-btn r-btn-secondary-sm">Test</button>
+            <p class="r-text-title" id="buttons">Buttons:</p>
+                <div class="r-indent-left">
+                    <button class="r-btn r-btn-primary">r-btn r-btn-primary</button>
+                    <button class="r-btn r-btn-primary-sm">r-btn r-btn-primary-sm</button>
+                    <button class="r-btn r-btn-primary r-btn-ripple">r-btn r-btn-primary r-btn-ripple</button>
+                    <button class="r-btn r-btn-primary-sm r-btn-ripple">r-btn r-btn-primary-sm r-btn-ripple</button>
+                    <button class="r-btn r-btn-secondary">r-btn r-btn-secondary</button>
+                    <button class="r-btn r-btn-secondary-sm">r-btn r-btn-secondary-sm</button>
+                    <button class="r-btn r-btn-secondary r-btn-ripple">r-btn r-btn-secondary r-btn-ripple</button>
+                    <button class="r-btn r-btn-secondary-sm r-btn-ripple">r-btn r-btn-secondary-sm r-btn-ripple</button>
+                    <button class="r-btn r-btn-accent">r-btn r-btn-accent</button>
+                    <button class="r-btn r-btn-accent-sm">r-btn r-btn-accent-sm</button>
+                    <button class="r-btn r-btn-accent r-btn-ripple">r-btn r-btn-accent r-btn-ripple</button>
+                    <button class="r-btn r-btn-accent-sm r-btn-ripple">r-btn r-btn-accent-sm r-btn-ripple</button>
                 </div>
-            </div>
+            <p class="r-text-title" id="cards">Cards:</p>
+                <div class="r-indent-left">
+                    <div style="max-width: 300px;">
+                        <div class="r-card">
+                            <div class="r-card-head">
+                                <p class="r-card-title">r-card-title</p>
+                                <div class="r-card-head-break"></div>
+                            </div>
+                            <div class="r-card-body">
+                                <p class="r-card-text">Images Within Cards</p>
+                                <a href="http://thecatapi.com" class="r-link-nounderline"><img src="http://thecatapi.com/api/images/get?format=src&type=gif" alt="Animated Cat Picture"></a><br>
+                                <button class="r-btn r-btn-secondary-sm r-btn-ripple">Test</button>
+                                <button class="r-btn r-btn-secondary-sm r-btn-ripple">Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <p class="r-text-title" id="navbar">Navigation:</p>
+                <div class="r-indent-left">
+                    
+                </div>
         </div>
     </body>
     <footer>
-        <!-- Must Load Jquery First (Required For Reload.js) -->
+        <!-- Keep This Load Order To Avoid It Breaking -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
-        <script src="/resources/js/reload.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="../bower_components/legitripple/js/ripple.js"></script>
+        <script src="../resources/js/reload.js"></script>
     </footer>
 </html>

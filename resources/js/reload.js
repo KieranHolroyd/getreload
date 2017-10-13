@@ -1,5 +1,2 @@
-	// External Js Librarys
-	$.getScript('/bower_components/legitripple/js/ripple.js', function()
-	{
-
-	});
+//Add Ripple Effect To All Buttons With r-btn-ripple.
+$(".r-btn-ripple").ripple();
