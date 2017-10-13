@@ -176,7 +176,7 @@ a:hover{
     text-decoration: none;
     color: #26D0CE;
 }
-.r-link-nounderline{
+.r-link-nounderline:hover{
     text-decoration: none;
     border-bottom: 0px;
 }
