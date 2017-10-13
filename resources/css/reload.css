@@ -155,13 +155,15 @@
 }
 /* Links */
 a{
-    text-decoration: none !default;
-    color: #26D0CE !default;
-    border-bottom: rgba(0,0,0,0) 1px solid !default;
-    transition: border-bottom .4s ease !default;
+    all: initial;
+    text-decoration: none;
+    color: #26D0CE;
+    border-bottom: rgba(0,0,0,0) 1px solid;
+    transition: border-bottom .4s ease;
 }
 a:hover{
-    border-bottom: #26D0CE 1px solid !default;
+    all: initial;
+    border-bottom: #26D0CE 1px solid;
 }
 .r-link-nounderline{
     text-decoration: none;
