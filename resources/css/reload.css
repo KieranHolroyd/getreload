@@ -177,5 +177,6 @@ a:hover{
     color: #26D0CE;
 }
 .r-link-nounderline{
+    text-decoration: none;
     border-bottom: 0px;
 }
