@@ -156,6 +156,7 @@
 /* Links */
 a{
     all: initial;
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #26D0CE;
@@ -164,6 +165,7 @@ a{
 }
 a:hover{
     all: initial;
+    cursor: hand;
     font-family: 'Roboto', sans-serif;
     color: #26D0CE;
     text-decoration: none;
