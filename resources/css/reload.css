@@ -156,6 +156,7 @@
 /* Links */
 a{
     all: initial;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #26D0CE;
     border-bottom: rgba(0,0,0,0) 1px solid;
@@ -163,6 +164,7 @@ a{
 }
 a:hover{
     all: initial;
+    font-family: 'Roboto', sans-serif;
     color: #26D0CE;
     text-decoration: none;
     border-bottom: #26D0CE 1px solid;
