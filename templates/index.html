@@ -1,16 +1,20 @@
-<html>
+<html id="topofpage">
     <head>
         <title>Reload | The Javascript &amp; CSS Library For Modern Applications</title>
         <link rel="stylesheet" href="../resources/css/reload.css">
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     </head>
     <body>
-        <ul>
-            <li><a href="#text">Typography</a></li>
-            <li><a href="#buttons">Buttons</a></li>
-            <li><a href="#cards">Cards</a></li>
-            <li><a href="#navbar">NavBar &amp; Navigation</a></li>
-        </ul>
+        <div class="r-tron r-nav-fixed-top">
+            <p class="r-text-tron" id="buttons">Reload: The Javascript &amp; CSS Library For Modern Applications</p>
+            <div style="display: inline-flex;">
+                <a href="#topofpage" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Typography</button></a>
+                <a href="#button" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Buttons</button></a>
+                <a href="#cards" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Cards</button></a>
+                <a href="#navbar" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">NavBar &amp; Navigation</button></a>
+            </div>
+        </div>
+        <div style="margin-top: 120px;"></div>
         <div class="r-container-l">
             <p class="r-text-title" id="text">Text Options:</p>
                 <div class="r-indent-left">
@@ -19,49 +23,190 @@
                     <p class="r-text-title">r-text-title</p>
                     <p class="r-text-title-sub">r-text-title-sub</p>
                 </div>
-            <p class="r-text-title" id="buttons">Buttons:</p>
-                <div class="r-indent-left">
-                    <button class="r-btn r-btn-primary">r-btn r-btn-primary</button>
-                    <button class="r-btn r-btn-primary-sm">r-btn r-btn-primary-sm</button>
-                    <button class="r-btn r-btn-primary r-btn-ripple">r-btn r-btn-primary r-btn-ripple</button>
-                    <button class="r-btn r-btn-primary-sm r-btn-ripple">r-btn r-btn-primary-sm r-btn-ripple</button>
-                    <button class="r-btn r-btn-secondary">r-btn r-btn-secondary</button>
-                    <button class="r-btn r-btn-secondary-sm">r-btn r-btn-secondary-sm</button>
-                    <button class="r-btn r-btn-secondary r-btn-ripple">r-btn r-btn-secondary r-btn-ripple</button>
-                    <button class="r-btn r-btn-secondary-sm r-btn-ripple">r-btn r-btn-secondary-sm r-btn-ripple</button>
-                    <button class="r-btn r-btn-accent">r-btn r-btn-accent</button>
-                    <button class="r-btn r-btn-accent-sm">r-btn r-btn-accent-sm</button>
-                    <button class="r-btn r-btn-accent r-btn-ripple">r-btn r-btn-accent r-btn-ripple</button>
-                    <button class="r-btn r-btn-accent-sm r-btn-ripple">r-btn r-btn-accent-sm r-btn-ripple</button>
+            <p class="r-text-title" id="button">Buttons:</p>
+                <div class="r-indent-left row">
+                    <div class="col-xs">
+                    <p class="r-text-caption">Primary Buttons (r-btn-primary)</p>
+                        <button class="r-btn r-btn-primary">r-btn r-btn-primary</button>
+                        <button class="r-btn r-btn-primary-sm">r-btn r-btn-primary-sm</button>
+                        <button class="r-btn r-btn-primary r-ripple">r-btn r-btn-primary r-ripple</button>
+                        <button class="r-btn r-btn-primary-sm r-ripple">r-btn r-btn-primary-sm r-ripple</button>
+<pre class="r-code"><code class="language-markup">&lt;button class=&quot;r-btn r-btn-primary&quot;&gt;r-btn r-btn-primary&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-primary-sm&quot;&gt;r-btn r-btn-primary-sm&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-primary r-ripple&quot;&gt;r-btn r-btn-primary r-ripple&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-primary-sm r-ripple&quot;&gt;r-btn r-btn-primary-sm r-ripple&lt;/button&gt;
+</code></pre>
+                    </div>
+                    <div class="col-xs">
+                    <p class="r-text-caption">Secondary Buttons (r-btn-secondary)</p>
+                        <button class="r-btn r-btn-secondary">r-btn r-btn-secondary</button>
+                        <button class="r-btn r-btn-secondary-sm">r-btn r-btn-secondary-sm</button>
+                        <button class="r-btn r-btn-secondary r-ripple">r-btn r-btn-secondary r-ripple</button>
+                        <button class="r-btn r-btn-secondary-sm r-ripple">r-btn r-btn-secondary-sm r-ripple</button>
+<pre class="r-code"><code class="language-markup">&lt;button class=&quot;r-btn r-btn-secondary&quot;&gt;r-btn r-btn-secondary&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-secondary-sm&quot;&gt;r-btn r-btn-secondary-sm&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-secondary r-ripple&quot;&gt;r-btn r-btn-secondary r-ripple&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-secondary-sm r-ripple&quot;&gt;r-btn r-btn-secondary-sm r-ripple&lt;/button&gt;
+</code></pre>
+                    </div>
+                    <div class="col-xs">
+                    <p class="r-text-caption">Accent Buttons (r-btn-accent)</p>
+                        <button class="r-btn r-btn-accent">r-btn r-btn-accent</button>
+                        <button class="r-btn r-btn-accent-sm">r-btn r-btn-accent-sm</button>
+                        <button class="r-btn r-btn-accent r-ripple">r-btn r-btn-accent r-ripple</button>
+                        <button class="r-btn r-btn-accent-sm r-ripple">r-btn r-btn-accent-sm r-ripple</button>
+<pre class="r-code"><code class="language-markup">&lt;button class=&quot;r-btn r-btn-accent&quot;&gt;r-btn r-btn-accent&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-accent-sm&quot;&gt;r-btn r-btn-accent-sm&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-accent r-ripple&quot;&gt;r-btn r-btn-accent r-ripple&lt;/button&gt;
+&lt;button class=&quot;r-btn r-btn-accent-sm r-ripple&quot;&gt;r-btn r-btn-accent-sm r-ripple&lt;/button&gt;
+</code></pre>
+                    </div>
                 </div>
             <p class="r-text-title" id="cards">Cards:</p>
-                <div class="r-indent-left">
-                    <div style="max-width: 300px;">
-                        <div class="r-card">
+                <div class="row">
+                    <div class="col-sm">
+                        <p class="r-text-caption">White (r-card-white)</p>
+                        <div class="r-card r-card-white">
                             <div class="r-card-head">
                                 <p class="r-card-title">r-card-title</p>
                                 <div class="r-card-head-break"></div>
                             </div>
                             <div class="r-card-body">
-                                <p class="r-card-text">Images Within Cards</p>
-                                <a href="http://thecatapi.com" class="r-link-nounderline"><img src="http://thecatapi.com/api/images/get?format=src&type=gif" alt="Animated Cat Picture"></a><br>
-                                <button class="r-btn r-btn-secondary-sm r-btn-ripple">Test</button>
-                                <button class="r-btn r-btn-secondary-sm r-btn-ripple">Test</button>
+                                <p class="r-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.</p>
+                                <button class="r-btn r-btn-primary-sm">Test</button>
+                                <button class="r-btn r-btn-secondary-sm r-ripple">Test (Ripple)</button>
+                                <button class="r-btn r-btn-accent-sm r-ripple">Test (Ripple)</button>
                             </div>
                         </div>
+<pre class="r-code"><code class="language-markup">&lt;div class=&quot;r-card r-card-white&quot;&gt;
+    &lt;div class=&quot;r-card-head&quot;&gt;
+        &lt;p class=&quot;r-card-title&quot;&gt;r-card-title&lt;/p&gt;
+        &lt;div class=&quot;r-card-head-break&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;r-card-body&quot;&gt;
+        &lt;p class=&quot;r-card-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.&lt;/p&gt;
+        &lt;button class=&quot;r-btn r-btn-primary-sm&quot;&gt;Test&lt;/button&gt;
+        &lt;button class=&quot;r-btn r-btn-secondary-sm r-ripple&quot;&gt;Test (Ripple)&lt;/button&gt;
+        &lt;button class=&quot;r-btn r-btn-accent-sm r-ripple&quot;&gt;Test (Ripple)&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="col-sm">
+                        <p class="r-text-caption">Primary (r-card-primary)</p>
+                        <div class="r-card r-card-primary">
+                            <div class="r-card-head">
+                                <p class="r-card-title">r-card-title</p>
+                                <div class="r-card-head-break"></div>
+                            </div>
+                            <div class="r-card-body">
+                                <p class="r-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.</p>
+                                <button class="r-btn r-btn-secondary-sm">Test</button>
+                                <button class="r-btn r-btn-accent-sm r-ripple">Test (Ripple)</button>
+                            </div>
+                        </div>
+<pre class="r-code"><code class="language-markup">&lt;div class=&quot;r-card r-card-primary&quot;&gt;
+    &lt;div class=&quot;r-card-head&quot;&gt;
+        &lt;p class=&quot;r-card-title&quot;&gt;r-card-title&lt;/p&gt;
+        &lt;div class=&quot;r-card-head-break&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;r-card-body&quot;&gt;
+        &lt;p class=&quot;r-card-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.&lt;/p&gt;
+        &lt;button class=&quot;r-btn r-btn-secondary-sm&quot;&gt;Test&lt;/button&gt;
+        &lt;button class=&quot;r-btn r-btn-accent-sm r-ripple&quot;&gt;Test (Ripple)&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                    <div class="col-sm">
+                        <p class="r-text-caption">Secondary (r-card-secondary)</p>
+                        <div class="r-card r-card-secondary">
+                            <div class="r-card-head">
+                                <p class="r-card-title">r-card-title</p>
+                                <div class="r-card-head-break"></div>
+                            </div>
+                            <div class="r-card-body">
+                                <p class="r-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.</p>
+                                <button class="r-btn r-btn-primary-sm">Test</button>
+                                <button class="r-btn r-btn-accent-sm r-ripple">Test (Ripple)</button>
+                            </div>
+                        </div>
+<pre class="r-code"><code class="language-markup">&lt;div class=&quot;r-card r-card-secondary&quot;&gt;
+    &lt;div class=&quot;r-card-head&quot;&gt;
+        &lt;p class=&quot;r-card-title&quot;&gt;r-card-title&lt;/p&gt;
+        &lt;div class=&quot;r-card-head-break&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;r-card-body&quot;&gt;
+        &lt;p class=&quot;r-card-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.&lt;/p&gt;
+        &lt;button class=&quot;r-btn r-btn-primary-sm&quot;&gt;Test&lt;/button&gt;
+        &lt;button class=&quot;r-btn r-btn-accent-sm r-ripple&quot;&gt;Test (Ripple)&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="col-sm">
+                        <p class="r-text-caption">Accent (r-card-accent)</p>
+                        <div class="r-card r-card-accent">
+                            <div class="r-card-head">
+                                <p class="r-card-title">r-card-title</p>
+                                <div class="r-card-head-break"></div>
+                            </div>
+                            <div class="r-card-body">
+                                <p class="r-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.</p>
+                                <button class="r-btn r-btn-primary-sm">Test</button>
+                                <button class="r-btn r-btn-secondary-sm r-ripple">Test (Ripple)</button>
+                            </div>
+                        </div>
+<pre class="r-code"><code class="language-markup">&lt;div class=&quot;r-card r-card-accent&quot;&gt;
+    &lt;div class=&quot;r-card-head&quot;&gt;
+        &lt;p class=&quot;r-card-title&quot;&gt;r-card-title&lt;/p&gt;
+        &lt;div class=&quot;r-card-head-break&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;r-card-body&quot;&gt;
+        &lt;p class=&quot;r-card-text&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus ullamcorper mauris, ut iaculis ligula pretium sit amet. Mauris molestie mattis sapien. Nunc sed massa ipsum. Donec quis egestas tortor, vitae rhoncus est. Donec dictum orci dolor, et egestas ipsum finibus eget. Morbi hendrerit, dui ac rutrum lacinia, ante neque posuere eros, a vulputate est lorem non lacus. Donec venenatis sagittis arcu, sed ultrices augue viverra non. Nunc eu facilisis tortor. Aenean aliquet libero ut blandit cursus.&lt;/p&gt;
+        &lt;button class=&quot;r-btn r-btn-primary-sm&quot;&gt;Test&lt;/button&gt;
+        &lt;button class=&quot;r-btn r-btn-secondary-sm r-ripple&quot;&gt;Test (Ripple)&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
                     </div>
                 </div>
             <p class="r-text-title" id="navbar">Navigation:</p>
-                <div class="r-indent-left">
-                    
+                <div class="r-indent-left row">
+                    <div class="col-md">
+                    <p class="r-text-heading">Vertical Navigational List</p>
+                    <div class="r-indent-left">
+                        <ul class="r-vnl">
+                            <a href="#Test"><li class="r-vnl-item">r-vnl-item</li></a>
+                            <a href="#Test"><li class="r-vnl-item">r-vnl-item</li></a>
+                            <a href="#Test"><li class="r-vnl-item">r-vnl-item</li></a>
+                            <a href="#Test"><li class="r-vnl-item">r-vnl-item</li></a>
+                            <a href="#Test"><li class="r-vnl-item">r-vnl-item</li></a>
+                        </ul><pre class="r-code" style="max-width: 265px;"><code class="language-markup">&lt;ul class=&quot;r-vnl&quot;&gt; 
+    &lt;a href=&quot;#test&quot;&gt;&lt;li class=&quot;r-vnl-item&quot;&gt;r-vnl-item&lt;/li&gt;&lt;/a&gt; 
+    &lt;a href=&quot;#test&quot;&gt;&lt;li class=&quot;r-vnl-item&quot;&gt;r-vnl-item&lt;/li&gt;&lt;/a&gt; 
+    &lt;a href=&quot;#test&quot;&gt;&lt;li class=&quot;r-vnl-item&quot;&gt;r-vnl-item&lt;/li&gt;&lt;/a&gt; 
+    &lt;a href=&quot;#test&quot;&gt;&lt;li class=&quot;r-vnl-item&quot;&gt;r-vnl-item&lt;/li&gt;&lt;/a&gt; 
+    &lt;a href=&quot;#test&quot;&gt;&lt;li class=&quot;r-vnl-item&quot;&gt;r-vnl-item&lt;/li&gt;&lt;/a&gt; 
+&lt;/ul&gt;</code></pre>
+                    </div>
+
+                   
                 </div>
         </div>
-    </body>
+    </div>
+    </body><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
         <!-- Keep This Load Order To Avoid It Breaking -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="../bower_components/legitripple/js/ripple.js"></script>
         <script src="../resources/js/reload.js"></script>
+        <script src="../resources/js/prism.js"></script>
     </footer>
 </html>
