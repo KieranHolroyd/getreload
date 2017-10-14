@@ -8,20 +8,41 @@
         <div class="r-tron r-nav-fixed">
             <p class="r-text-tron" id="buttons">Reload: The Javascript &amp; CSS Library For Modern Applications</p>
             <div style="display: inline-flex;">
-                <a href="#topofpage" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Typography</button></a>
+                <a href="#text" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Typography</button></a>
                 <a href="#button" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Buttons</button></a>
                 <a href="#cards" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Cards</button></a>
                 <a href="#navbar" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Navigation</button></a>
+                <a href="#ripple" class="r-link-nounderline"><button class="r-btn r-btn-accent-sm r-ripple">Ripple</button></a>
             </div>
         </div>
         <div style="margin-top: 120px;"></div>
         <div class="r-container-l">
             <p class="r-text-title" id="text">Text Options:</p>
                 <div class="r-indent-left">
-                    <p class="r-text-headline">r-text-headline</p>
-                    <p class="r-text-headline-sub">r-text-headline-sub</p>
-                    <p class="r-text-title">r-text-title</p>
-                    <p class="r-text-title-sub">r-text-title-sub</p>
+                    <div class="row">
+                        <div class="col-xs">
+                            <p class="r-text-caption">Regular Text</p>
+                            <div class="r-indent-left">
+                                <p class="r-text-headline">Headline</p>
+                                <p class="r-text-headline-sub">Headline Second Line</p>
+                                <p class="r-text-title">Title</p>
+                                <p class="r-text-title-sub">Title Second Line</p>
+                                <p class="r-text-heading">Heading</p>
+                                <p class="r-text-subheading">Subheading</p>
+                                <p class="r-text-caption">Caption</p>
+                            </div>
+                        </div>
+                        <div class="col-xs">
+                            <p class="r-text-caption">Element Based Text</p>
+                            <div class="r-indent-left">
+                                <div class="r-card" style="width: 50px;">
+                                    <p class="r-card-title">Card Title</p>
+                                    <p class="r-card-text">Card Text</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             <p class="r-text-title" id="button">Buttons:</p>
                 <div class="r-indent-left row">
@@ -166,9 +187,49 @@
                         </div>
                     </div>
                 </div>
-        </div>
-    </div>
-    </body><br><br>
+            </div>
+            <p class="r-text-title" id="ripple">Ripple:</p>
+                <div class="r-indent-left row">
+                    <div class="col-xs">
+                        <button class="r-btn r-btn-primary r-ripple">Button With Ripple</button>
+                        <div style="background: #333; padding: 20px;"><a class="r-ripple" href="#1">Link With Ripple (doesent work)</a></div>
+                        <li class="r-ripple" style="background: #333; padding: 20px;"><a href="#1">Link With Ripple (Encase It In A li or span)</a></li>
+                    </div>
+                    <div class="col-xs">
+                        <p class="r-text-caption">Navbar With Ripple Everything</p>
+                        <div class="r-nav r-nav-accent r-ripple">
+                            <ul>
+                                <li class="r-ripple"><a href="#1">Navbar</a></li>
+                                <li class="r-ripple"><a href="#1">With</a></li>
+                                <li class="r-ripple"><a href="#1">Ripple</a></li>
+                                <li class="r-ripple"><a href="#1">EVERYTHING</a></li>
+                                <button class="r-btn r-btn-secondary-sm r-ripple">Button</button>
+                            </ul>
+                        </div>
+                        <p class="r-text-caption">Navbar With Ripple Buttons</p>
+                        <div class="r-nav r-nav-accent">
+                            <ul>
+                                <li class="r-ripple"><a href="#1">Navbar</a></li>
+                                <li class="r-ripple"><a href="#1">With</a></li>
+                                <li class="r-ripple"><a href="#1">Ripple</a></li>
+                                <li class="r-ripple"><a href="#1">Buttons</a></li>
+                                <button class="r-btn r-btn-secondary-sm r-ripple">Button</button>
+                            </ul>
+                        </div>
+                        <p class="r-text-caption">Navbar With Ripple Background</p>
+                        <div class="r-nav r-nav-accent r-ripple">
+                            <ul>
+                                <li><a href="#1">Navbar</a></li>
+                                <li><a href="#1">With</a></li>
+                                <li><a href="#1">Ripple</a></li>
+                                <li><a href="#1">Background</a></li>
+                                <button class="r-btn r-btn-secondary-sm r-ripple">Button</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </div> <!--Container END -->
+    </body><br><br><br><br><br><br>
     <footer>
         <!-- Keep This Load Order To Avoid It Breaking -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

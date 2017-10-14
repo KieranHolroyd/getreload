@@ -1,5 +1,6 @@
 //Add Ripple Effect To All Buttons With r-btn-ripple.
 $(".r-ripple").ripple();
+//Fixed Top Nav Gets A Shadow When User Scrolls
 function nav_wf() {
     if($(window).scrollTop() === 0){
         $('.r-nav-fixed').removeClass('r-nav-shadow');
@@ -8,7 +9,7 @@ function nav_wf() {
     }
 }
 $(window).scroll(nav_wf);
-
+//Smooth Anchor Points
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
