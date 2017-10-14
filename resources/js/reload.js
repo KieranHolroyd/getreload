@@ -1,5 +1,14 @@
 //Add Ripple Effect To All Buttons With r-btn-ripple.
 $(".r-ripple").ripple();
+function nav_wf() {
+    if($(window).scrollTop() === 0){
+        $('.r-nav-fixed').removeClass('r-nav-shadow');
+    } else {
+        $('.r-nav-fixed').addClass('r-nav-shadow');
+    }
+}
+$(window).scroll(nav_wf);
+
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -14,7 +23,7 @@ $('a[href*="#"]')
       if (target.length) {
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top-85
         }, 1000, function() {
           var $target = $(target);
           $target.focus();

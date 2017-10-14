@@ -182,15 +182,23 @@
 .r-text-caption{
     font-size: 15px;
     font-weight: 300;
+    margin: 3px;
 }
 .r-text-tron{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 100;
 }
+@media (max-width: 1500px){
+    .r-text-tron{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
 /* Containers */
 .r-container-l{
-    max-width: 1800px;
+    max-width: 95vw;
     margin: auto;
 }
 .r-indent-left{
@@ -269,13 +277,60 @@ button a{
     margin: auto;
 }
 /* Navbars */
-.r-nav-fixed-top{
+.r-nav{
+    color: #444;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.r-nav ul{
+    display: inline-flex;
+    padding: 5px;
+    list-style-type: none;
+}
+.r-nav li{
+    padding: 5px;
+}
+.r-nav a{
+    color: inherit;
+}
+.r-nav a:hover{
+    border-bottom-color: #444;
+}
+.r-nav button{
+    margin: 0px;
+}
+.r-nav-primary{
+    color: white;
+    background: #18e2e0; 
+    background: -webkit-linear-gradient(left, #26D0CE, #18e2e0);
+    background: -o-linear-gradient(left, #26D0CE, #18e2e0);
+    background: linear-gradient(to right, #26D0CE, #18e2e0);
+}
+.r-nav-secondary{
+    color: white;
+    background: #db0889;
+    background: -webkit-linear-gradient(left, #ad05a9, #db0889);
+    background: -o-linear-gradient(left, #ad05a9, #db0889);
+    background: linear-gradient(to right, #ad05a9, #db0889);
+}
+.r-nav-accent{
+    color: white;
+    background: #FF512F;
+    background: -webkit-linear-gradient(left, #fc2f7e, #FF512F);
+    background: -o-linear-gradient(left, #fc2f7e, #FF512F);
+    background: linear-gradient(to right, #fc2f7e, #FF512F);
+}
+.r-nav-fixed{
     width: 100vw;
     background: white;
     position: fixed;
     text-align: center;
     top: 0;
     left: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
     z-index: 5;
+    transition: box-shadow .5s;
+}
+.r-nav-shadow{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 }
