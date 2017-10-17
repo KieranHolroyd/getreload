@@ -38,3 +38,10 @@ $('a[href*="#"]')
       }
     }
   });
+  // Modals
+  function openmodal(id) {
+    $('#'+id).fadeIn(400);
+  }
+  function closemodal(id) {
+    $('#'+id).delay(150).fadeOut(300);
+  }

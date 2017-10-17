@@ -250,6 +250,7 @@ button a{
 .r-link-nounderline{
     text-decoration: none;
     color: #26D0CE;
+    border-bottom: 0;
 }
 .r-link-nounderline:hover{
     text-decoration: none;
@@ -351,4 +352,40 @@ button a{
 }
 .r-nav-shadow{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+/* Modals */
+.r-modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+.r-modal-content{
+    background-color: #ddd;
+    margin: 10px 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.4);
+}
+.r-modal-content-body{
+    text-align: justify;
+}
+.r-modal-text{
+    font-size: 15px;
+    font-weight: 300;
+}
+.r-modal-title{
+    font-size: 30px;
+}
+.r-modal-close{
+    float: right;
+    cursor: hand;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50%;
 }
